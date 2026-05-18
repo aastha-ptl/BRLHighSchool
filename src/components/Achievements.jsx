@@ -28,7 +28,7 @@ function Achievements({ sectionRef, limit, showAllLink = false, standalone = fal
           <h2 className="brl-heading-balance text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
             Celebrating the milestones of BRL High School.
           </h2>
-          <p className="brl-copy mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+          <p className="brl-copy text-sm leading-relaxed text-slate-600 sm:text-base">
             Highlights of academic, sports, and co-curricular excellence by our students.
           </p>
         </div>

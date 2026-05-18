@@ -60,11 +60,11 @@ function Home({ sectionRef, onCtaClick, onMilestoneClick, onAdmissionClick }) {
                             Secondary & Higher Secondary School
                         </p>
 
-                        <h1 className="brl-heading-balance mx-auto mt-4 max-w-2xl text-3xl font-semibold leading-tight text-slate-900 sm:mt-6 sm:text-4xl md:text-5xl lg:mx-0">
+                        <h1 className="brl-heading-balance mx-auto mt-4 max-w-xl text-2xl font-semibold leading-snug text-slate-900 sm:mt-6 sm:text-3xl md:text-4xl lg:mx-0 lg:text-5xl">
                             Empowering Young Minds Through Education
                         </h1>
 
-                        <p className="brl-copy mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600 sm:mt-6 sm:text-base sm:leading-7 lg:mx-0 lg:text-lg">
+                        <p className="brl-copy mx-auto mt-4 max-w-lg text-sm text-slate-600 sm:mt-6 md:text-base lg:mx-0">
                             An inspiring campus where quality teaching, smart learning, and
                             natural surroundings support student growth.
                         </p>
@@ -106,7 +106,7 @@ function Home({ sectionRef, onCtaClick, onMilestoneClick, onAdmissionClick }) {
                     </div>
 
                     {/* ===== Image Carousel ===== */}
-                    <div className="order-1 relative mx-auto w-full max-w-[520px] lg:order-2 lg:max-w-none lg:pt-10">
+                    <div className="order-1 relative mx-auto w-full max-w-full sm:max-w-[520px] lg:order-2 lg:max-w-none lg:pt-10">
                         <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl sm:rounded-[1.75rem]">
 
                             {/* Slides */}

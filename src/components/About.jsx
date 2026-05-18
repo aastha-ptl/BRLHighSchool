@@ -1,15 +1,33 @@
+import { FaBookOpen, FaBullseye, FaEye, FaFlask, FaGem, FaGraduationCap } from 'react-icons/fa6'
+
 const highlights = [
     {
         title: 'Mission',
-        text: 'To provide quality secondary and higher secondary education through experienced teachers, modern learning facilities, and value-based teaching that prepares students for higher education, professional success, and responsible citizenship.',
+        icon: FaBullseye,
+        text: 'To provide quality secondary and higher secondary education through disciplined learning, experienced faculty, modern teaching methods, and value-based academic development.',
     },
     {
         title: 'Vision',
-        text: 'To be a leading government educational institution that nurtures disciplined, confident, and capable learners, enabling them to succeed in diverse fields in India and abroad while remaining grounded in values and social responsibility.',
+        icon: FaEye,
+        text: 'To nurture confident, disciplined, and responsible learners prepared for higher education, professional success, and meaningful contributions to society.',
     },
     {
         title: 'Core Values',
-        text: 'Integrity in learning, respect for individuals, discipline in action, inclusivity in education, and continuous growth through knowledge, culture, sports, and service.',
+        icon: FaGem,
+        text: 'Integrity, discipline, respect, excellence, and continuous growth across academics, culture, sports, and community.',
+    },
+]
+
+const academicStructure = [
+    {
+        title: 'Secondary Section',
+        icon: FaBookOpen,
+        text: 'Focused on strong academic foundations, discipline, and board examination readiness through experienced teachers, smart classrooms, regular assessments, and career guidance after Class 10.',
+    },
+    {
+        title: 'Higher Secondary Section',
+        icon: FaFlask,
+        text: 'Structured streams designed for higher education and professional pathways, including Science, Commerce, and Arts with subject-focused learning and student support.',
     },
 ]
 
@@ -19,155 +37,121 @@ function About({ sectionRef }) {
             id="about"
             ref={sectionRef}
             style={{ scrollMarginTop: 'var(--nav-height)' }}
-            className="bg-[#f1f5f9] py-14 sm:py-20 lg:py-28"
+            className="bg-[#f1f5f9] py-12 sm:py-16 lg:py-20"
         >
-            <div className="mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-8">
 
-                {/* ===== Header ===== */}
-                <div className="mx-auto max-w-3xl text-center">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brl-700 sm:text-xs">
-                        About Our School
+                {/* Section title */}
+                <div className="flex flex-col gap-4 text-center">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brl-500 sm:text-sm sm:tracking-[0.4em]">
+                        About Us
                     </p>
-
-                    <h2 className="mt-4 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                      <h2 className="brl-heading-balance text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
                         A legacy of quality education since 1906
                     </h2>
-
-                    <p className="mt-4 text-[15px] leading-7 text-slate-600 sm:text-base">
-                        A government institution rooted in discipline, academic excellence,
-                        and lifelong values.
+                    <p className="brl-copy text-sm leading-relaxed text-slate-600 sm:text-base">
+                        A government institution rooted in discipline, academic excellence, and lifelong values.
                     </p>
                 </div>
 
-                {/* ===== Main Content ===== */}
-                <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
+                {/* Top — Large About Card (same design as bottom cards) */}
+                <div className="mt-6 w-full">
+                        <div className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 pt-7 sm:p-8 sm:pt-9 shadow-[0_12px_35px_rgba(2,6,23,0.06)] transition-transform duration-300">
+                            <div className="absolute left-0 top-0 h-[5px] w-full rounded-t-[2rem] bg-gradient-to-r from-brl-500 via-blue-500 to-indigo-500" />
 
-                    {/* Left Text */}
-                    <div className="space-y-6 text-slate-600 lg:col-span-7">
+                        {/* Card header: icon + label + main title */}
+                        <div className="flex items-center gap-4">
+                            <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brl-50 text-brl-700 ring-1 ring-brl-100">
+                                <FaGraduationCap className="h-6 w-6" />
+                            </div>
 
-                        <p className="brl-copy text-[15.5px] leading-8 sm:text-base">
-                            Established in 1906, BRL Secondary & Higher Secondary School is one
-                            of the region’s oldest government educational institutions,
-                            committed to strong academics, disciplined learning, and holistic
-                            development.
+                            <div>
+                                <h3 className="mt-1 text-2xl font-semibold text-slate-900 sm:text-3xl">Legacy & Learning</h3>
+                            </div>
+                        </div>
+
+                        <div className="mt-5 text-left space-y-4 text-slate-600">
+                            <p className="brl-copy text-[15px] leading-7 sm:text-base">
+                                Established in 1906, BRL Secondary & Higher Secondary School has been committed to academic excellence and disciplined learning, creating generations of accomplished students.
+                            </p>
+
+                            <p className="brl-copy text-[15px] leading-7 sm:text-base">
+                                Our experienced faculty and modern facilities support a rigorous yet caring environment that encourages intellectual growth and character development.
+                            </p>
+
+                            <p className="brl-copy text-[15px] leading-7 sm:text-base">
+                                We emphasize holistic development through academics, sports, and cultural activities to prepare students for success and responsible citizenship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom — Three Equal Cards */}
+                <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
+                    {highlights.map((item) => (
+                        <div
+                            key={item.title}
+                            className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+                        >
+                            <div className="-mx-5 -mt-5 mb-4 h-1 rounded-t-3xl bg-gradient-to-r from-brl-500 via-blue-500 to-indigo-500 sm:-mx-6 sm:-mt-6 sm:mb-5" />
+
+                            <div className="flex items-start gap-4">
+                                <div className="inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-brl-50 text-brl-700 ring-1 ring-brl-100">
+                                    <item.icon className="h-5 w-5" />
+                                </div>
+
+                                <h3 className="mt-1 text-left text-lg font-semibold text-slate-900">
+                                    {item.title}
+                                </h3>
+                            </div>
+
+                            <p className="brl-copy mt-3 flex-1 text-left text-[15px] leading-7 text-slate-600">
+                                {item.text}
+                            </p>
+
+                            
+                        </div>
+                    ))}
+                </div>
+
+                {/* Academic Structure Section */}
+                <div className="mt-14 sm:mt-16">
+                    <div className="flex flex-col gap-4 text-center">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brl-500 sm:text-sm sm:tracking-[0.4em]">
+                            Academic Structure
                         </p>
-
-                        <p className="brl-copy text-[15.5px] leading-8 sm:text-base">
-                            The campus is surrounded by greenery and a natural pond, providing
-                            a calm environment that supports focused learning. Teaching is
-                            delivered by experienced faculty using smart classrooms,
-                            laboratories, and modern educational tools.
-                        </p>
-
-                        <p className="brl-copy text-[15.5px] leading-8 sm:text-base">
-                            The school actively promotes sports, cultural activities, national
-                            festivals, and annual events. Each year, more than 250 students
-                            successfully pass out, with alumni excelling in higher education,
-                            professional careers, public service, and opportunities abroad.
-                        </p>
-
-                        <p className="brl-copy text-[15.5px] leading-8 sm:text-base">
-                            Established when no formal schools existed in nearby villages, the
-                            institution played a vital role in rural education and today offers
-                            facilities and academic standards comparable to well-established
-                            urban institutions.
+                         <h2 className="brl-heading-balance text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
+                            Secondary and Higher Secondary Education
+                        </h2>
+                        <p className="brl-copy text-sm leading-relaxed text-slate-600 sm:text-base">
+                            A balanced academic path designed to build strong foundations, subject expertise, and future readiness.
                         </p>
                     </div>
 
-                    {/* Mission / Vision / Values */}
-                    <div className="space-y-5 lg:col-span-5">
-
-                        {highlights.map((item) => (
+                    <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+                        {academicStructure.map((item) => (
                             <div
                                 key={item.title}
-                                className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-sm transition duration-300 hover:shadow-md"
+                                className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
                             >
-                                <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-900">
-                                    {item.title}
-                                </h3>
+                                <div className="-mx-5 -mt-5 mb-4 h-1 rounded-t-3xl bg-gradient-to-r from-brl-500 via-blue-500 to-indigo-500 sm:-mx-6 sm:-mt-6 sm:mb-5" />
 
-                                <p className="mt-3 text-[15px] leading-7 text-slate-600">
+                                <div className="flex items-start gap-4">
+                                    <div className="inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-brl-50 text-brl-700 ring-1 ring-brl-100">
+                                        <item.icon className="h-5 w-5" />
+                                    </div>
+
+                                    <h3 className="mt-1 text-left text-lg font-semibold text-slate-900">
+                                        {item.title}
+                                    </h3>
+                                </div>
+
+                                <p className="brl-copy mt-3 flex-1 text-left text-[15px] leading-7 text-slate-600">
                                     {item.text}
                                 </p>
                             </div>
                         ))}
-
                     </div>
-
-                </div>
-
-                {/* ===== Divider ===== */}
-                <div className="my-12 h-px w-full bg-slate-200 sm:my-16" />
-
-                {/* ===== Departments ===== */}
-                <div>
-
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brl-700 sm:text-xs">
-                        Academic Structure
-                    </p>
-
-                    <h3 className="mt-4 text-2xl font-semibold text-slate-900 sm:text-3xl">
-                        Secondary and Higher Secondary Education
-                    </h3>
-
-                    <div className="mt-8 grid gap-5 md:grid-cols-2 lg:gap-7">
-
-                        {/* Secondary */}
-                        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:shadow-md">
-
-                            <div className="bg-brl-50 px-5 py-4">
-                                <p className="text-sm font-semibold text-brl-800">
-                                    Secondary Section
-                                </p>
-                            </div>
-
-                            <div className="px-5 py-5">
-                                <p className="text-[15px] leading-7 text-slate-600">
-                                    Focused on strong academic foundations, discipline, and board
-                                    examination readiness through experienced teachers, smart
-                                    classrooms, regular assessments, and career guidance after
-                                    Class 10.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        {/* Higher Secondary */}
-                        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:shadow-md">
-
-                            <div className="bg-brl-50 px-5 py-4">
-                                <p className="text-sm font-semibold text-brl-800">
-                                    Higher Secondary Section
-                                </p>
-                            </div>
-
-                            <div className="px-5 py-5">
-
-                                <p className="text-[15px] leading-7 text-slate-600">
-                                    Structured streams designed for higher education and professional
-                                    pathways.
-                                </p>
-
-                                <ul className="mt-4 space-y-3 text-[15px] leading-7 text-slate-600">
-                                    <li>
-                                        <strong>Science (1982):</strong> Physics, Chemistry, Biology with laboratory learning.
-                                    </li>
-
-                                    <li>
-                                        <strong>Commerce (1978):</strong> Accountancy, Economics, Business Studies.
-                                    </li>
-
-                                    <li>
-                                        <strong>Arts (1978):</strong> Humanities and social sciences.
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
                 </div>
 
             </div>

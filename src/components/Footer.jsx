@@ -6,7 +6,7 @@ function Footer({ onNavigate }) {
         <div className="grid gap-6 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-3">
 
           {/* School Info */}
-          <div className="brl-copy">
+          <div className="brl-justify">
             <p className="brl-heading-balance text-base font-semibold text-white">
               BRL High School
             </p>

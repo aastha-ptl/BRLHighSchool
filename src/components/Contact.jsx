@@ -21,7 +21,7 @@ function Contact({ sectionRef }) {
         </div>
 
         <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-2 lg:gap-8">
-          <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+          <div className="brl-justify rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
             <div className="space-y-5 sm:space-y-6">
 
               <div>
@@ -48,7 +48,7 @@ function Contact({ sectionRef }) {
                   Taluka: Petlad | District: Anand | Gujarat - 388150
                 </p>
                 {/* Added office hours to reinforce availability and trust. */}
-                <div className="brl-copy mt-4 text-sm text-slate-600">
+                <div className="brl-justify mt-4 text-sm text-slate-600">
                   <p className="font-semibold text-slate-700">
                     Office Hours:
                   </p>

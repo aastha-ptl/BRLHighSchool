@@ -39,7 +39,7 @@ function Events({ sectionRef, limit, showAllLink = false, standalone = false }) 
           {visibleEvents.map((event) => (
             <div
               key={event.slug}
-              className="group relative overflow-hidden rounded-3xl border border-brl-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group brl-justify relative overflow-hidden rounded-3xl border border-brl-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <OptimizedImage
                 src={event.coverImage}

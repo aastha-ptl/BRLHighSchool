@@ -141,7 +141,7 @@ function EventDetails() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-8">
+          <div className="brl-justify rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-8">
             <p className="brl-copy text-sm leading-relaxed text-slate-700 sm:text-base">
               {event.fullDescription}
             </p>

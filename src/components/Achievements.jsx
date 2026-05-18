@@ -37,7 +37,7 @@ function Achievements({ sectionRef, limit, showAllLink = false, standalone = fal
           {visibleAchievements.map((achievement) => (
             <article
               key={achievement.slug}
-              className="group overflow-hidden rounded-3xl border border-brl-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group brl-justify overflow-hidden rounded-3xl border border-brl-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <OptimizedImage
                 src={achievement.image}

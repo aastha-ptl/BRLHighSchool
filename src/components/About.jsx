@@ -44,7 +44,7 @@ function About({ sectionRef }) {
                 <div className="mt-10 grid grid-cols-1 gap-8 lg:mt-12 lg:grid-cols-12 lg:gap-12">
 
                     {/* Left Text */}
-                    <div className="space-y-4 text-sm leading-relaxed text-slate-600 sm:text-base lg:col-span-7">
+                    <div className="brl-justify space-y-4 text-sm leading-relaxed text-slate-600 sm:text-base lg:col-span-7">
                         <p className="brl-copy">
                             Established in 1906, BRL Secondary & Higher Secondary School is one
                             of the region’s oldest government educational institutions,
@@ -75,7 +75,7 @@ function About({ sectionRef }) {
                     </div>
 
                     {/* Mission / Vision / Values */}
-                    <div className="space-y-4 lg:col-span-5 lg:space-y-5">
+                    <div className="brl-justify space-y-4 lg:col-span-5 lg:space-y-5">
                         {highlights.map((item) => (
                             <div
                                 key={item.title}
@@ -110,7 +110,7 @@ function About({ sectionRef }) {
 
                         {/* Secondary */}
                         {/* Secondary */}
-                                                <div className="overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:shadow-md">
+                                                <div className="brl-justify overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:shadow-md">
                             {/* Header band */}
                             <div className="bg-brl-50 px-5 py-3">
                                 <p className="text-sm font-semibold text-brl-800">
@@ -130,7 +130,7 @@ function About({ sectionRef }) {
                         </div>
 
                         {/* Higher Secondary */}
-                                                <div className="overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:shadow-md">
+                                                <div className="brl-justify overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:shadow-md">
                             {/* Header band */}
                             <div className="bg-brl-50 px-5 py-3">
                                 <p className="text-sm font-semibold text-brl-800">

@@ -161,7 +161,7 @@ function AppRoutes() {
               ×
             </button>
             <div className="grid gap-0 md:grid-cols-[0.9fr_1.1fr]">
-              <div className="flex flex-col justify-between bg-brl-900 p-5 text-white sm:p-6 lg:p-7">
+              <div className="brl-justify flex flex-col justify-between bg-brl-900 p-5 text-white sm:p-6 lg:p-7">
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-brl-100 sm:text-xs">
                     Admissions Open 2026-27
@@ -183,7 +183,7 @@ function AppRoutes() {
                 </div>
               </div>
 
-              <div className="max-h-[70vh] overflow-y-auto p-5 sm:p-6 lg:p-7">
+              <div className="brl-justify max-h-[70vh] overflow-y-auto p-5 sm:p-6 lg:p-7">
                 <div className="inline-flex rounded-full bg-brl-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-brl-600 sm:text-xs">
                   Required Documents for Admission
                 </div>

@@ -75,16 +75,16 @@ function About({ sectionRef }) {
                     </div>
 
                     {/* Mission / Vision / Values */}
-                    <div className="brl-justify space-y-4 lg:col-span-5 lg:space-y-5">
+                    <div className="space-y-4 lg:col-span-5 lg:space-y-5">
                         {highlights.map((item) => (
                             <div
                                 key={item.title}
-                                className="rounded-xl border-l-4 border-brl-700 bg-white px-4 py-4 shadow-sm sm:px-5"
+                                className="rounded-xl border-l-4 border-brl-700 bg-white px-4 py-4 text-left shadow-sm sm:px-5"
                             >
-                                <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-900 sm:text-sm">
+                                <h3 className="brl-heading-balance text-xs font-semibold uppercase tracking-wide text-slate-900 sm:text-sm">
                                     {item.title}
                                 </h3>
-                                <p className="brl-copy mt-2 text-sm leading-relaxed text-slate-600">
+                                <p className="mt-2 max-w-[42ch] text-sm leading-relaxed text-slate-600">
                                     {item.text}
                                 </p>
                             </div>
@@ -110,7 +110,7 @@ function About({ sectionRef }) {
 
                         {/* Secondary */}
                         {/* Secondary */}
-                                                <div className="brl-justify overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:shadow-md">
+                                                <div className="overflow-hidden rounded-xl border border-slate-200 bg-white text-left transition hover:shadow-md">
                             {/* Header band */}
                             <div className="bg-brl-50 px-5 py-3">
                                 <p className="text-sm font-semibold text-brl-800">
@@ -120,7 +120,7 @@ function About({ sectionRef }) {
 
                             {/* Content */}
                             <div className="px-5 py-4">
-                                <p className="brl-copy text-sm leading-relaxed text-slate-600">
+                                <p className="mt-2 max-w-[46ch] text-sm leading-relaxed text-slate-600">
                                     Focused on strong academic foundations, discipline, and board
                                     examination readiness through experienced teachers, smart
                                     classrooms, regular assessments, and career guidance after
@@ -130,7 +130,7 @@ function About({ sectionRef }) {
                         </div>
 
                         {/* Higher Secondary */}
-                                                <div className="brl-justify overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:shadow-md">
+                                                <div className="overflow-hidden rounded-xl border border-slate-200 bg-white text-left transition hover:shadow-md">
                             {/* Header band */}
                             <div className="bg-brl-50 px-5 py-3">
                                 <p className="text-sm font-semibold text-brl-800">
@@ -140,12 +140,12 @@ function About({ sectionRef }) {
 
                             {/* Content */}
                             <div className="px-5 py-4">
-                                <p className="brl-copy text-sm leading-relaxed text-slate-600">
+                                <p className="mt-2 max-w-[46ch] text-sm leading-relaxed text-slate-600">
                                     Structured streams designed for higher education and professional
                                     pathways.
                                 </p>
 
-                                <ul className="brl-copy mt-3 space-y-2 text-sm text-slate-600">
+                                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-600">
                                     <li><strong>Science (1982):</strong> Physics, Chemistry, Biology with laboratory learning.</li>
                                     <li><strong>Commerce (1978):</strong> Accountancy, Economics, Business Studies.</li>
                                     <li><strong>Arts (1978):</strong> Humanities and social sciences.</li>

@@ -16,12 +16,12 @@ select {
 }
 
 .brl-copy {
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
+  text-align: left;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
   overflow-wrap: anywhere;
   word-break: normal;
-  line-height: 1.75;
+  max-width: 68ch;
   text-wrap: pretty;
 }
 
@@ -29,27 +29,52 @@ select {
 .brl-justify p,
 .brl-justify li,
 .brl-justify .brl-copy {
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
+  text-align: left;
   overflow-wrap: anywhere;
   word-break: normal;
 }
 
 .brl-justify {
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 @media (min-width: 640px) {
   .brl-copy {
-    line-height: 1.85;
+    line-height: 1.8;
   }
 
   .brl-justify {
-    line-height: 1.85;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 768px) {
+  .brl-copy {
+    text-align: justify !important;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+
+  .brl-justify,
+  .brl-justify p,
+  .brl-justify li,
+  .brl-justify .brl-copy {
+    text-align: justify !important;
+    text-justify: inter-word;
+    hyphens: auto;
   }
 }
 
 .brl-heading-balance {
   text-wrap: balance;
+}
+
+.brl-content {
+  max-width: 72ch;
+}
+
+@media (min-width: 1024px) {
+  .brl-content {
+    max-width: 76ch;
+  }
 }

@@ -78,3 +78,16 @@ select {
     max-width: 76ch;
   }
 }
+
+.brl-copy {
+  text-align: left;
+  line-height: 1.9;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 768px) {
+  .brl-copy {
+    font-size: 15.5px;
+    line-height: 1.85;
+  }
+}

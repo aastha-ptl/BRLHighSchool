@@ -79,9 +79,7 @@ function About({ sectionRef }) {
                                 Our experienced faculty and modern facilities support a rigorous yet caring environment that encourages intellectual growth and character development.
                             </p>
 
-                            <p className="brl-copy text-[15px] leading-7 sm:text-base">
-                                We emphasize holistic development through academics, sports, and cultural activities to prepare students for success and responsible citizenship.
-                            </p>
+                            
                         </div>
                     </div>
                 </div>

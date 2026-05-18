@@ -18,7 +18,7 @@ const eventsData = [
       event1Image3,
       event1Image1,
     ],
-    upcoming: true,
+    upcoming: false,
   },
   
 ]

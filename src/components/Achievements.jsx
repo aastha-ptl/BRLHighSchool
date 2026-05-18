@@ -25,10 +25,10 @@ function Achievements({ sectionRef, limit, showAllLink = false, standalone = fal
           <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brl-500 sm:text-sm sm:tracking-[0.4em]">
             Achievements
           </p>
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
+          <h2 className="brl-heading-balance text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
             Celebrating the milestones of BRL High School.
           </h2>
-          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+          <p className="brl-copy mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
             Highlights of academic, sports, and co-curricular excellence by our students.
           </p>
         </div>
@@ -55,7 +55,7 @@ function Achievements({ sectionRef, limit, showAllLink = false, standalone = fal
                 <p className="mt-2 text-sm font-semibold text-brl-600">
                   {achievement.date}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                <p className="brl-copy mt-3 text-sm leading-relaxed text-slate-600">
                   {achievement.description}
                 </p>
               </div>

@@ -30,11 +30,11 @@ function About({ sectionRef }) {
                         About Our School
                     </p>
 
-                    <h2 className="mt-3 text-2xl font-semibold leading-snug text-slate-900 sm:text-3xl lg:text-4xl">
+                    <h2 className="brl-heading-balance mt-3 text-2xl font-semibold leading-snug text-slate-900 sm:text-3xl lg:text-4xl">
                         A legacy of quality education since 1906
                     </h2>
 
-                    <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+                    <p className="brl-copy mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
                         A government institution rooted in discipline, academic excellence,
                         and lifelong values.
                     </p>
@@ -45,28 +45,28 @@ function About({ sectionRef }) {
 
                     {/* Left Text */}
                     <div className="space-y-4 text-sm leading-relaxed text-slate-600 sm:text-base lg:col-span-7">
-                        <p>
+                        <p className="brl-copy">
                             Established in 1906, BRL Secondary & Higher Secondary School is one
                             of the region’s oldest government educational institutions,
                             committed to strong academics, disciplined learning, and holistic
                             development.
                         </p>
 
-                        <p>
+                        <p className="brl-copy">
                             The campus is surrounded by greenery and a natural pond, providing
                             a calm environment that supports focused learning. Teaching is
                             delivered by experienced faculty using smart classrooms,
                             laboratories, and modern educational tools.
                         </p>
 
-                        <p>
+                        <p className="brl-copy">
                             The school actively promotes sports, cultural activities, national
                             festivals, and annual events. Each year, more than 250 students
                             successfully pass out, with alumni excelling in higher education,
                             professional careers, public service, and opportunities abroad.
                         </p>
 
-                        <p>
+                        <p className="brl-copy">
                             Established when no formal schools existed in nearby villages, the
                             institution played a vital role in rural education and today offers
                             facilities and academic standards comparable to well-established
@@ -84,7 +84,7 @@ function About({ sectionRef }) {
                                 <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-900 sm:text-sm">
                                     {item.title}
                                 </h3>
-                                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                                <p className="brl-copy mt-2 text-sm leading-relaxed text-slate-600">
                                     {item.text}
                                 </p>
                             </div>
@@ -102,7 +102,7 @@ function About({ sectionRef }) {
                         Academic Structure
                     </p>
 
-                    <h3 className="mt-3 text-xl font-semibold text-slate-900 sm:text-2xl">
+                    <h3 className="brl-heading-balance mt-3 text-xl font-semibold text-slate-900 sm:text-2xl">
                         Secondary and Higher Secondary Education
                     </h3>
 
@@ -120,7 +120,7 @@ function About({ sectionRef }) {
 
                             {/* Content */}
                             <div className="px-5 py-4">
-                                <p className="text-sm leading-relaxed text-slate-600">
+                                <p className="brl-copy text-sm leading-relaxed text-slate-600">
                                     Focused on strong academic foundations, discipline, and board
                                     examination readiness through experienced teachers, smart
                                     classrooms, regular assessments, and career guidance after
@@ -140,12 +140,12 @@ function About({ sectionRef }) {
 
                             {/* Content */}
                             <div className="px-5 py-4">
-                                <p className="text-sm leading-relaxed text-slate-600">
+                                <p className="brl-copy text-sm leading-relaxed text-slate-600">
                                     Structured streams designed for higher education and professional
                                     pathways.
                                 </p>
 
-                                <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                                <ul className="brl-copy mt-3 space-y-2 text-sm text-slate-600">
                                     <li><strong>Science (1982):</strong> Physics, Chemistry, Biology with laboratory learning.</li>
                                     <li><strong>Commerce (1978):</strong> Accountancy, Economics, Business Studies.</li>
                                     <li><strong>Arts (1978):</strong> Humanities and social sciences.</li>

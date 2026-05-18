@@ -166,10 +166,10 @@ function AppRoutes() {
                   <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-brl-100 sm:text-xs">
                     Admissions Open 2026-27
                   </p>
-                  <h2 className="mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
+                  <h2 className="brl-heading-balance mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
                     Admission Process
                   </h2>
-                  <p className="mt-3 max-w-xl text-sm leading-6 text-brl-100/90">
+                  <p className="brl-copy mt-3 max-w-xl text-sm leading-6 text-brl-100/90">
                     Keep these documents ready before visiting the school for admission.
                     We have listed the required items below for a smooth process.
                   </p>
@@ -177,7 +177,7 @@ function AppRoutes() {
 
                 <div className="mt-6 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-sm">
                   <p className="text-sm font-semibold text-white">Helpful note</p>
-                  <p className="mt-1 text-sm leading-6 text-brl-100/90">
+                  <p className="brl-copy mt-1 text-sm leading-6 text-brl-100/90">
                     Please bring original documents along with photocopies wherever needed.
                   </p>
                 </div>
@@ -204,7 +204,7 @@ function AppRoutes() {
                       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brl-700 text-xs font-semibold text-white">
                         {index + 1}
                       </div>
-                      <p className="text-sm leading-6 text-slate-700 sm:text-[15px]">
+                      <p className="brl-copy text-sm leading-6 text-slate-700 sm:text-[15px]">
                         {item}
                       </p>
                     </div>

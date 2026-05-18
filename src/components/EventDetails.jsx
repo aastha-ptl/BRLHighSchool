@@ -20,7 +20,7 @@ function EventDetails() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brl-600">
             Event Not Found
           </p>
-          <h1 className="mt-4 text-3xl font-semibold text-slate-900">
+          <h1 className="brl-heading-balance mt-4 text-3xl font-semibold text-slate-900">
             This event does not exist.
           </h1>
           <Link
@@ -50,7 +50,7 @@ function EventDetails() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brl-600 sm:text-xs sm:tracking-[0.3em]">
               Event Details
             </p>
-            <h1 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-3 sm:text-3xl lg:text-4xl">
+            <h1 className="brl-heading-balance mt-2 text-2xl font-semibold text-slate-900 sm:mt-3 sm:text-3xl lg:text-4xl">
               {event.title}
             </h1>
             <p className="mt-2 text-sm text-brl-600">{event.date}</p>
@@ -142,7 +142,7 @@ function EventDetails() {
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-8">
-            <p className="text-sm leading-relaxed text-slate-700 sm:text-base">
+            <p className="brl-copy text-sm leading-relaxed text-slate-700 sm:text-base">
               {event.fullDescription}
             </p>
             {event.upcoming ? (

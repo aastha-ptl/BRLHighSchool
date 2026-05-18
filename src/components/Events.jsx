@@ -24,10 +24,10 @@ function Events({ sectionRef, limit, showAllLink = false, standalone = false }) 
           <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brl-500 sm:text-sm sm:tracking-[0.4em]">
             Events
           </p>
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
+          <h2 className="brl-heading-balance text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl">
             Discover what is happening at BRL High School.
           </h2>
-          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+          <p className="brl-copy mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
             Join our upcoming events to connect with students, faculty, and the
             broader school community.
           </p>
@@ -56,7 +56,7 @@ function Events({ sectionRef, limit, showAllLink = false, standalone = false }) 
                 <p className="mt-2 text-sm font-semibold text-brl-600">
                   {event.date}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                <p className="brl-copy mt-3 text-sm leading-relaxed text-slate-600">
                   {event.shortDescription}
                 </p>
                 <Link

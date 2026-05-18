@@ -11,10 +11,10 @@ function Contact({ sectionRef }) {
           <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brl-500 sm:text-sm sm:tracking-[0.4em]">
             Contact Us
           </p>
-          <h2 className="mt-3 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-3xl lg:text-4xl">
+          <h2 className="brl-heading-balance mt-3 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-3xl lg:text-4xl">
             School Contact Details
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+          <p className="brl-copy mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
             Feel free to contact us during school working hours for any
             academic or administrative inquiries.
           </p>
@@ -28,9 +28,9 @@ function Contact({ sectionRef }) {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brl-600">
                   Email
                 </p>
-                <a
+                  <a
                   href="mailto:brlhighschoolnar@gmail.com"
-                  className="mt-2 block text-base font-medium text-slate-700 transition hover:text-brl-700"
+                  className="brl-copy mt-2 block text-base font-medium text-slate-700 transition hover:text-brl-700"
                 >
                   brlhighschoolnar@gmail.com
                 </a>
@@ -40,7 +40,7 @@ function Contact({ sectionRef }) {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brl-600">
                   Address
                 </p>
-                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">
+                <p className="brl-copy mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">
                   BRL High School Campus
                   <br />
                   Opposite Bank of Baroda, Nar
@@ -48,7 +48,7 @@ function Contact({ sectionRef }) {
                   Taluka: Petlad | District: Anand | Gujarat - 388150
                 </p>
                 {/* Added office hours to reinforce availability and trust. */}
-                <div className="mt-4 text-sm text-slate-600">
+                <div className="brl-copy mt-4 text-sm text-slate-600">
                   <p className="font-semibold text-slate-700">
                     Office Hours:
                   </p>

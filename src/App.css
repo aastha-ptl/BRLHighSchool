@@ -14,3 +14,23 @@ textarea,
 select {
   font: inherit;
 }
+
+.brl-copy {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+@media (min-width: 640px) {
+  .brl-copy {
+    line-height: 1.85;
+  }
+}
+
+.brl-heading-balance {
+  text-wrap: balance;
+}

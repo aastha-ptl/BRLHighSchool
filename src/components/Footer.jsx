@@ -6,8 +6,8 @@ function Footer({ onNavigate }) {
         <div className="grid gap-6 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-3">
 
           {/* School Info */}
-          <div>
-            <p className="text-base font-semibold text-white">
+          <div className="brl-copy">
+            <p className="brl-heading-balance text-base font-semibold text-white">
               BRL High School
             </p>
             <p className="mt-0.5 text-sm text-brl-200">
@@ -48,7 +48,7 @@ function Footer({ onNavigate }) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-6 border-t border-brl-800 pt-4 text-center text-xs leading-relaxed text-slate-400">
+        <div className="brl-copy mt-6 border-t border-brl-800 pt-4 text-center text-xs leading-relaxed text-slate-400">
           <p>© 2026 BRL High School. All rights reserved.</p>
           <p className="mt-0.5">
             Designed & Developed by{' '}

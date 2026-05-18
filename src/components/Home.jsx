@@ -60,11 +60,11 @@ function Home({ sectionRef, onCtaClick, onMilestoneClick, onAdmissionClick }) {
                             Secondary & Higher Secondary School
                         </p>
 
-                        <h1 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold leading-tight text-slate-900 sm:mt-6 sm:text-4xl md:text-5xl lg:mx-0">
+                        <h1 className="brl-heading-balance mx-auto mt-4 max-w-2xl text-3xl font-semibold leading-tight text-slate-900 sm:mt-6 sm:text-4xl md:text-5xl lg:mx-0">
                             Empowering Young Minds Through Education
                         </h1>
 
-                        <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600 sm:mt-6 sm:text-base sm:leading-7 lg:mx-0 lg:text-lg">
+                        <p className="brl-copy mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600 sm:mt-6 sm:text-base sm:leading-7 lg:mx-0 lg:text-lg">
                             An inspiring campus where quality teaching, smart learning, and
                             natural surroundings support student growth.
                         </p>
@@ -91,7 +91,7 @@ function Home({ sectionRef, onCtaClick, onMilestoneClick, onAdmissionClick }) {
                             <div className="flex flex-col gap-4 rounded-3xl border border-white/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between sm:px-5 sm:py-4 lg:max-w-xl">
                                 <div className="flex items-center gap-3 text-sm text-slate-600">
                                     <span className="inline-flex h-2.5 w-2.5 rounded-full bg-brl-500 shadow-[0_0_0_6px_rgba(59,130,246,0.12)]" />
-                                    <span>Admissions open for 2026-27</span>
+                                    <span className="brl-copy">Admissions open for 2026-27</span>
                                 </div>
 
                                 <button

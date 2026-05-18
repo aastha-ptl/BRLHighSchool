@@ -1,7 +1,7 @@
-import ssc2026 from '../assets/images/Achievements/SSC2026.jpeg'    
-import hsc2023 from '../assets/images/Achievements/HSCSCIENCE2023.jpeg'
-import hscscience2026 from '../assets/images/Achievements/HSCSCIENCE2026.jpeg'
-import hscgeneral2026 from '../assets/images/Achievements/HSCGeneral2026.jpeg'
+import ssc2026 from '../assets/images/Achievements/SSC2026.webp'
+import hsc2023 from '../assets/images/Achievements/HSCSCIENCE2023.webp'
+import hscscience2026 from '../assets/images/Achievements/HSCSCIENCE2026.webp'
+import hscgeneral2026 from '../assets/images/Achievements/HSCGeneral2026.webp'
 const achievementsData = [
   {
   slug: 'hsc-science-results-2026',

@@ -4,28 +4,25 @@ function Contact({ sectionRef }) {
       id="contact"
       ref={sectionRef}
       style={{ scrollMarginTop: 'var(--nav-height)' }}
-      className="bg-white pb-16 pt-8 sm:py-20"
+      className="bg-white pb-12 pt-8 sm:py-16 lg:py-20"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 lg:px-8">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-5 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brl-500">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brl-500 sm:text-sm sm:tracking-[0.4em]">
             Contact Us
           </p>
-          <h2 className="mt-4 text-3xl font-semibold text-slate-900 sm:text-4xl">
-            {/* Updated heading for a formal, official tone. */}
+          <h2 className="mt-3 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-3xl lg:text-4xl">
             School Contact Details
           </h2>
-          <p className="mt-3 text-base text-slate-600">
-            {/* Refined subtext to match the official messaging. */}
+          <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
             Feel free to contact us during school working hours for any
             academic or administrative inquiries.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-            {/* Replace the placeholders below with official school contact details. */}
-            <div className="space-y-6">
+        <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-2 lg:gap-8">
+          <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+            <div className="space-y-5 sm:space-y-6">
 
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brl-600">
@@ -43,7 +40,7 @@ function Contact({ sectionRef }) {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brl-600">
                   Address
                 </p>
-                <p className="mt-2 text-base text-slate-700">
+                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">
                   BRL High School Campus
                   <br />
                   Opposite Bank of Baroda, Nar
@@ -62,12 +59,11 @@ function Contact({ sectionRef }) {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
-            {/* Replace the map URL with the official school location. */}
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-sm sm:p-4">
             <iframe
               title="BRL High School location map"
               src="https://www.google.com/maps?q=BRL%20High%20School&output=embed"
-              className="h-[320px] w-full rounded-2xl border-0"
+              className="h-[240px] w-full rounded-2xl border-0 sm:h-[320px] lg:h-[360px]"
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"

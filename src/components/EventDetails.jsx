@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import eventsData from '../data/eventsData.js'
+import OptimizedImage from './OptimizedImage'
 
 function EventDetails() {
   const { slug } = useParams()
@@ -42,47 +43,51 @@ function EventDetails() {
   }
 
   return (
-    <section className="bg-white pb-16 pt-28">
-      <div className="mx-auto w-full max-w-6xl px-5 lg:px-8">
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
+    <section className="bg-white pb-12 pt-24 sm:pb-16 sm:pt-28">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-5 lg:px-8">
+        <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brl-600">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brl-600 sm:text-xs sm:tracking-[0.3em]">
               Event Details
             </p>
-            <h1 className="mt-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
+            <h1 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-3 sm:text-3xl lg:text-4xl">
               {event.title}
             </h1>
             <p className="mt-2 text-sm text-brl-600">{event.date}</p>
           </div>
           <Link
             to="/events"
-            className="inline-flex items-center rounded-full border border-brl-200 px-4 py-2 text-sm font-semibold text-brl-700 transition hover:bg-brl-50"
+            className="inline-flex items-center justify-center rounded-full border border-brl-200 px-4 py-2 text-sm font-semibold text-brl-700 transition hover:bg-brl-50 sm:self-start"
           >
             Back to Events
           </Link>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr]">
+        <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr] lg:gap-8">
           <div>
             {/* Compact carousel so images are easy to browse without taking too much space. */}
-            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:rounded-3xl">
               <div
-                className="flex transition-transform duration-700 ease-in-out"
+                className="flex touch-pan-y transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
               >
-                {gallery.map((src) => (
-                  <img
+                {gallery.map((src, imageIndex) => (
+                  <OptimizedImage
                     key={src}
                     src={src}
                     alt={event.title}
-                    className="h-64 w-full flex-shrink-0 object-cover sm:h-72 lg:h-80"
-                    loading="lazy"
+                    width={1200}
+                    height={800}
+                    priority={imageIndex === 0}
+                    loading={imageIndex === 0 ? 'eager' : 'lazy'}
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="aspect-[4/3] w-full flex-shrink-0 object-cover sm:aspect-[16/10] lg:aspect-[4/3]"
                   />
                 ))}
               </div>
             </div>
 
-            <div className="mt-4 flex items-center justify-between">
+            <div className="mt-4 flex items-center justify-between gap-3">
               <button
                 type="button"
                 onClick={handlePrev}
@@ -111,8 +116,8 @@ function EventDetails() {
               </button>
             </div>
 
-            <div className="mt-4 flex gap-3 overflow-x-auto pb-2">
-              {gallery.map((src, index) => (
+            <div className="mt-4 flex gap-3 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {gallery.map((src, index) => (
                 <button
                   key={`thumb-${src}`}
                   type="button"
@@ -123,19 +128,21 @@ function EventDetails() {
                       : 'border-slate-200'
                   }`}
                 >
-                  <img
+                  <OptimizedImage
                     src={src}
                     alt={`${event.title} thumbnail ${index + 1}`}
-                    className="h-20 w-28 object-cover"
-                    loading="lazy"
+                    width={280}
+                    height={180}
+                    sizes="112px"
+                    className="h-20 w-28 object-cover sm:h-24 sm:w-32"
                   />
                 </button>
               ))}
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
-            <p className="text-base leading-relaxed text-slate-700">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-8">
+            <p className="text-sm leading-relaxed text-slate-700 sm:text-base">
               {event.fullDescription}
             </p>
             {event.upcoming ? (

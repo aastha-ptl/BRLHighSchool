@@ -1,7 +1,7 @@
-import event1Image1 from '../assets/images/events/26th_jan_2026/event1_1.jpeg'
-import event1Image2 from '../assets/images/events/26th_jan_2026/event1_2.jpeg'
-import event1Image3 from '../assets/images/events/26th_jan_2026/event1_3.jpeg'
-import event1Image4 from '../assets/images/events/26th_jan_2026/event1_4.jpeg'
+import event1Image1 from '../assets/images/events/26th_jan_2026/event1_1.webp'
+import event1Image2 from '../assets/images/events/26th_jan_2026/event1_2.webp'
+import event1Image3 from '../assets/images/events/26th_jan_2026/event1_3.webp'
+import event1Image4 from '../assets/images/events/26th_jan_2026/event1_4.webp'
 
 // Static events data. Add new events by updating this file and related image imports.
 const eventsData = [
@@ -16,8 +16,7 @@ const eventsData = [
     images: [
       event1Image2,
       event1Image3,
-      event1Image1
-      ,
+      event1Image1,
     ],
     upcoming: true,
   },

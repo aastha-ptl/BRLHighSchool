@@ -80,17 +80,17 @@ function Navbar({ onNavigate }) {
 
   return (
     <header className={headerClasses}>
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 lg:px-8">
+      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-4 lg:px-8">
         <button
           type="button"
           onClick={() => handleNavClick('home')}
-          className="text-left"
+          className="min-w-0 text-left"
         >
-          <div className={`text-xl font-semibold ${isHome ? 'text-white' : 'text-brl-800'}`}>
+          <div className={`text-base font-semibold leading-tight sm:text-xl ${isHome ? 'text-white' : 'text-brl-800'}`}>
             BRL High School
           </div>
           <div
-            className={`text-xs uppercase tracking-[0.2em] ${
+            className={`max-w-[14rem] text-[10px] uppercase tracking-[0.16em] sm:max-w-none sm:text-xs sm:tracking-[0.2em] ${
               isHome ? 'text-brl-100' : 'text-brl-500'
             }`}
           >
@@ -121,7 +121,7 @@ function Navbar({ onNavigate }) {
 
         <button
           type="button"
-          className={`flex items-center justify-center rounded-full border p-2 shadow-sm transition md:hidden ${
+          className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border p-2 shadow-sm transition md:hidden ${
             isHome
               ? 'border-brl-700 bg-brl-800/60 text-white hover:border-brl-500'
               : 'border-brl-100 bg-white/80 text-brl-700 hover:border-brl-200'
@@ -156,13 +156,13 @@ function Navbar({ onNavigate }) {
           isHome ? 'bg-brl-900/95' : 'bg-white/90 backdrop-blur'
         } transition-all duration-300`}
       >
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 py-4">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-4 sm:px-6">
           {navItems.map((item) => (
             <button
               key={item.id}
               type="button"
               onClick={() => handleNavClick(item.id)}
-              className={`text-left text-sm font-medium transition ${
+              className={`rounded-xl px-2 py-1 text-left text-sm font-medium transition ${
                 activeId === item.id
                   ? isHome
                     ? 'text-white'

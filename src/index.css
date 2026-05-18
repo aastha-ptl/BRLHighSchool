@@ -6,6 +6,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  min-width: 320px;
 }
 
 body {
@@ -14,4 +24,7 @@ body {
   background-color: #f8fafc;
   color: #0f172a;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

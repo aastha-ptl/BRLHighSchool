@@ -97,7 +97,7 @@ function Home({ sectionRef, onCtaClick, onMilestoneClick, onAdmissionClick }) {
                                 <button
                                     type="button"
                                     onClick={onAdmissionClick}
-                                    className="w-full rounded-full bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-300 transition duration-300 hover:-translate-y-0.5 hover:from-indigo-700 hover:via-blue-600 hover:to-purple-600 sm:w-auto sm:px-6"
+                                    className="w-full rounded-full bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-500 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:from-indigo-700 hover:via-blue-600 hover:to-purple-600 shadow-none sm:w-auto sm:px-6"
                                 >
                                     See Admission Process
                                 </button>

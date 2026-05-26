@@ -2,9 +2,28 @@ import event1Image1 from '../assets/images/events/26th_jan_2026/event1_1.webp'
 import event1Image2 from '../assets/images/events/26th_jan_2026/event1_2.webp'
 import event1Image3 from '../assets/images/events/26th_jan_2026/event1_3.webp'
 import event1Image4 from '../assets/images/events/26th_jan_2026/event1_4.webp'
+import achieversImage1 from '../assets/images/events/2026_result_celebration/img1.webp'
+import achieversImage2 from '../assets/images/events/2026_result_celebration/img2.webp'
+import achieversImage3 from '../assets/images/events/2026_result_celebration/img3.webp'
+import achieversImage4 from '../assets/images/events/2026_result_celebration/img4.webp'
 
 // Static events data. Add new events by updating this file and related image imports.
 const eventsData = [
+   {
+  slug: 'ssc-hsc-achievers-2026',
+  title: 'SSC & HSC 2026 Achievers',
+  date: 'May 2026',
+  shortDescription: 'Nar Kelavani Mandal proudly honors the outstanding achievements of SSC and HSC 2026 students.',
+  fullDescription:
+    'Nar Kelavani Mandal proudly recognizes the exceptional achievements of our SSC & HSC 2026 students. Their dedication, hard work, and commitment to excellence have brought pride to the entire institution. The Secretary of Nar Kelavani Mandal extends heartfelt congratulations to all achievers for their remarkable academic performance. These bright stars have set an inspiring example for future generations. We wish them continued success, happiness, and excellence in all their future endeavors.',
+  coverImage: achieversImage2,
+  images: [
+    achieversImage1,
+    achieversImage3,
+    achieversImage4,
+  ],
+  upcoming: false,
+},
   {
     slug: 'republic-day-celebration-2026',
     title: 'Republic Day Celebration 2026',
@@ -19,7 +38,9 @@ const eventsData = [
       event1Image1,
     ],
     upcoming: false,
-  },
+  }
+ 
+
   
 ]
 
